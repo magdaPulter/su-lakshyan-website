@@ -1,0 +1,34 @@
+@import "../../styles/config";
+.homepage {
+  color: $green-secondary;
+  background-color: $green-primary;
+
+  .home-about {
+    // height: 822px; //not fixed
+    height: 888px;
+    display: flex;
+    justify-content: space-between;
+    main {
+      width: 651px;
+      color: $green-secondary;
+      padding-left: 100px;
+      margin-top: 99px;
+      // margin-top: 40px; //not fixed
+      h1 {
+        width: 508px;
+        font-size: 75px;
+        line-height: 95px;
+        margin-top: 40px;
+      }
+      p {
+        width: 470px;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+    }
+
+    img {
+      align-self: end;
+    }
+  }
+}

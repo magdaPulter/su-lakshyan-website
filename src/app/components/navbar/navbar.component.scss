@@ -1,0 +1,34 @@
+@import "../../styles/config";
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: $green-primary;
+  height: 66px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .navbar {
+    width: 932px;
+    height: 41px;
+    font-size: 17px;
+    display: flex;
+    padding: 0px 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+    }
+    a.donate {
+      background-color: $green-secondary;
+      color: $white;
+      width: 126px;
+      height: 41px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
