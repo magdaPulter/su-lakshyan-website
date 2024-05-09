@@ -1,0 +1,19 @@
+@import "../../styles/config";
+
+button {
+  width: 161px;
+  height: 45px;
+  background-color: $green-primary;
+  color: $green-secondary;
+  border-radius: 100px;
+  border: 1px solid $green-secondary;
+  cursor: pointer;
+  span {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  i.icon-right {
+    width: 35px;
+    margin-left: 5px;
+  }
+}
