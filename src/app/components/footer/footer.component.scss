@@ -1,0 +1,35 @@
+@import "../../styles/config";
+
+footer {
+  height: 271px;
+  background-color: $pink-primary;
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 195px;
+    height: 147px;
+    margin-top: 61px;
+  }
+  .contact-adress {
+    margin-top: 64px;
+    width: 829px;
+    height: 108px;
+    display: flex;
+    justify-content: space-between;
+    color: $green-secondary;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 36px;
+    p {
+      width: 224px;
+    }
+    ul li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $green-secondary;
+      }
+    }
+  }
+}
