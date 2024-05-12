@@ -4,6 +4,7 @@ import { HomeAboutComponent } from '../home-about/home-about.component';
 import { HomeCreateComponent } from '../home-create/home-create.component';
 import { HomeMottoComponent } from '../home-motto/home-motto.component';
 import { HomeEstablishmentComponent } from '../home-establishment/home-establishment.component';
+import { HomeProjectsComponent } from '../home-projects/home-projects.component';
 
 @Component({
   selector: 'app-homepage',
@@ -16,6 +17,7 @@ import { HomeEstablishmentComponent } from '../home-establishment/home-establish
     HomeCreateComponent,
     HomeMottoComponent,
     HomeEstablishmentComponent,
+    HomeProjectsComponent,
   ],
 })
 export class HomepageComponent {}

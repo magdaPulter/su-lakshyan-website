@@ -3,10 +3,11 @@
 button {
   width: 161px;
   height: 45px;
-  background-color: $green-primary;
-  color: $green-secondary;
+  background-color: inherit;
+  color: inherit;
   border-radius: 100px;
   border: 1px solid $green-secondary;
+  // border: 1px solid inherit;
   cursor: pointer;
   span {
     font-size: 12px;

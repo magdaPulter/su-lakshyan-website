@@ -1,0 +1,92 @@
+@import "../../styles/config";
+
+.home-projects {
+  height: 1024px;
+  background-color: rgba(199, 217, 200, 0.4);
+
+  .top {
+    display: flex;
+    height: 341px;
+
+    .logo {
+      width: 133px;
+      height: 100px;
+      margin-top: 100px;
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+    .text {
+      background-color: $pink-primary;
+      border-radius: 0px 0px 0px 200px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 44px 150px 50px 90px;
+      }
+    }
+  }
+
+  .middle {
+    display: flex;
+    justify-content: space-between;
+    height: 341px;
+
+    aside {
+      display: flex;
+      .text {
+        background-color: $pink-dark;
+        color: $white;
+        font-size: 24px;
+        line-height: 34px;
+        width: 384px;
+        border-radius: 0px 0px 200px 0px;
+
+        p {
+          margin: 50px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    height: 342px;
+    display: flex;
+
+    .projects {
+      background-color: $pink-dark;
+      color: $white;
+      width: 715px;
+      height: 100%;
+      padding: 50px;
+
+      p {
+        font-size: 20px;
+        line-height: auto;
+      }
+      h1 {
+        font-size: 80px;
+        line-height: 95px;
+      }
+      .read-more {
+        margin-top: 71px;
+        height: 45px;
+
+        // width: 161px;
+        // border-radius: 100px;
+        // border: 1px solid $white;
+      }
+    }
+    .text {
+      background-color: $pink-primary;
+      width: 341px;
+      padding: 40px 80px 0px 40px;
+      p {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+}
