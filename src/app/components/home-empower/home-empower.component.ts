@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './home-empower.component.html',
-  styleUrl: './home-empower.component.scss'
+  styleUrl: './home-empower.component.scss',
 })
-export class HomeEmpowerComponent {
-
-}
+export class HomeEmpowerComponent {}
