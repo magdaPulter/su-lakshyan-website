@@ -8,7 +8,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  .navbar {
+  ul {
     width: 932px;
     height: 41px;
     font-size: 17px;
@@ -16,7 +16,8 @@ nav {
     padding: 0px 60px;
     justify-content: space-between;
     align-items: center;
-
+    color: $green-secondary;
+    list-style: none;
     a {
       cursor: pointer;
     }

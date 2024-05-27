@@ -1,0 +1,65 @@
+@import "../../styles/config";
+
+.empower {
+  padding-top: 96px;
+  height: 850px;
+  background-color: $green-primary;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: center;
+  // font-family: $main-font;
+
+  .carousel {
+    width: 1362px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button.arrow {
+      cursor: pointer;
+      border-radius: 50%;
+      border: solid 1px $green-secondary;
+      background-color: inherit;
+      width: 45px;
+      height: 45px;
+      i.icon-right,
+      i.icon-left {
+        color: $green-secondary;
+        font-size: 28px;
+        // font-weight: 100;
+      }
+    }
+  }
+  header {
+    width: 582px;
+    width: 600px;
+    height: 197px;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      line-height: 70px;
+      font-weight: 400;
+    }
+  }
+
+  ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    li {
+      list-style: none;
+      a {
+        cursor: pointer;
+        border: none;
+        background-color: inherit;
+        i.icon-instagram,
+        i.icon-facebook-circled {
+          font-size: 36px;
+          color: $green-secondary;
+        }
+      }
+    }
+  }
+}
