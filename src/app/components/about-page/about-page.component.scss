@@ -1,0 +1,87 @@
+@import "../../styles/config";
+
+.about {
+  height: 845px; //779+66 (nav)
+  padding-top: 66px;
+  display: flex;
+  background-color: $green-primary;
+
+  main {
+    width: 720px;
+    height: 779px;
+    padding: 102px;
+
+    h1 {
+      font-size: 60px;
+      line-height: 75px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 40px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.organisation-goal {
+  height: 1201px;
+  background-color: aqua;
+  background-color: darksalmon;
+  .top {
+    display: flex;
+
+    img {
+      justify-self: self-start;
+      align-self: self-start;
+      margin: 104px 68px;
+    }
+
+    header {
+      margin-top: 104px;
+      width: 727px;
+      height: 321px;
+      border-radius: 0px 200px 0px 200px;
+      background-color: #002902;
+      color: $white;
+      padding: 60px 80px 60px 80px;
+
+      .title {
+        width: 513px;
+        height: 201px;
+        h1 {
+          font-size: 60px;
+          line-height: 75px;
+          font-weight: 400;
+          // margin-bottom: 30px;
+          text-align: right;
+        }
+        p {
+          text-align: right;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .goals-container {
+    width: 1130px;
+    height: 540px;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+
+    .goals-item {
+      width: 350px;
+      height: 250px;
+      background-color: aqua;
+      border-radius: 50px;
+    }
+  }
+}
