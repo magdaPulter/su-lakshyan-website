@@ -6,8 +6,13 @@ nav {
   background-color: $green-primary;
   height: 66px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+
+  img {
+    height: 40px;
+    margin-left: 40px;
+  }
   ul {
     width: 932px;
     height: 41px;
