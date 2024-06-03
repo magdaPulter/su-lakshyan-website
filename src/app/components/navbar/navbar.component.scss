@@ -28,6 +28,13 @@ nav {
     a {
       cursor: pointer;
     }
+    a,
+    a:hover,
+    a:active,
+    a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
     a.donate {
       background-color: $green-secondary;
       color: $white;
