@@ -1,0 +1,101 @@
+@import "../../styles/config";
+
+.projects {
+  min-height: 2316px;
+  padding-top: 71px;
+  background-color: $light-green;
+  padding-left: 80px;
+  padding-right: 80px;
+  h1 {
+    font-size: 75px;
+    line-height: 75px;
+    letter-spacing: -2px;
+    color: $green-secondary;
+    padding-top: 125px;
+  }
+  main {
+    margin-top: 95px;
+    max-width: 1280px;
+    min-height: 1748px;
+
+    .images {
+      height: 428px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 400px;
+        height: 400px;
+        border: 1px solid $green-secondary;
+        border-radius: 50px;
+      }
+    }
+
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 40px;
+
+      li {
+        width: 620px;
+        height: 620px;
+        list-style: none;
+        border: 1px solid $green-secondary;
+        border-radius: 50px;
+
+        .item-content {
+          margin-top: 34px;
+          margin-left: 61px;
+          width: 494px;
+          height: 470px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          span {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          h2 {
+            // width: 424px;
+            height: 96px;
+            font-size: 40px;
+            line-height: 48px;
+          }
+          p {
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
+        button {
+          border: none;
+          cursor: pointer;
+          margin-left: 61px;
+          margin-top: 42px;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration: underline;
+          background-color: inherit;
+        }
+      }
+    }
+  }
+
+  .load-more {
+    text-align: center;
+    padding: 77px 0px;
+
+    button {
+      width: 161px;
+      height: 45px;
+      border-radius: 100px;
+      border: 1px solid $green-secondary;
+      padding: 5px 23px 5px 23px;
+      background-color: inherit;
+      cursor: pointer;
+    }
+  }
+}
