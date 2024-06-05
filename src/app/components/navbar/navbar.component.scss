@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 0px;
   img {
     height: 40px;
     margin-left: 40px;
@@ -43,6 +44,44 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+  // button i.icon-menu {
+  //   display: none;
+  // }
+  button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  a img {
+    display: none;
+  }
+  a.nav-item {
+    display: none;
+  }
+  nav {
+    ul {
+      padding: 0px;
+      justify-content: flex-start;
+
+      a.donate {
+        margin-left: 19px;
+      }
+    }
+    button {
+      display: inline;
+      border: none;
+      background-color: inherit;
+      width: 50px;
+      height: 26px;
+      margin-bottom: 12px;
+      margin-right: 19px;
+      i.icon-menu {
+        font-size: 36px;
+        color: $green-secondary;
+      }
     }
   }
 }

@@ -29,7 +29,7 @@
             <p>SU LAKSHYAN</p>
             <h1>Our projects</h1>
             <div class="read-more">
-                <app-read-more-btn></app-read-more-btn>
+                <app-read-more-btn [routerLink]="'/projects'"></app-read-more-btn>
             </div>
         </div>
         <div class="text">
@@ -37,5 +37,26 @@
                 community.
             </p>
         </div>
+    </section>
+
+    <section class="mobile-view">
+        <img src="../../../assets/old-woman-smiling-mobile.png" alt="photo of old woman smiling">
+
+        <main>
+            <section class="mobile-top">
+                <p>SU LAKSHYAN</p>
+                <h1>Our projects</h1>
+            </section>
+            <section class="mobile-moddle">
+                <p>Education advancement includes providing basic computer skills and English language training.</p>
+                <br>
+                <p>Generating local employment opportunities, which influences economic growth and stability of the
+                    community.
+                </p>
+            </section>
+            <section class="mobile-bottom">
+                <app-read-more-btn [routerLink]="'/projects'"></app-read-more-btn>
+            </section>
+        </main>
     </section>
 </section>

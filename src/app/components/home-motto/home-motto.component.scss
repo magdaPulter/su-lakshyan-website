@@ -24,3 +24,31 @@
     color: $black;
   }
 }
+
+@media (max-width: 768px) {
+  .motto {
+    min-width: 390px;
+    height: 495px;
+
+    main {
+      margin: 50px 40px 50px 19px;
+      // margin-left: 19px;
+      width: 331px;
+      height: 395px;
+      h2 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+      blockquote {
+        font-size: 32px;
+        line-height: 41px;
+        letter-spacing: -2px;
+        margin-right: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

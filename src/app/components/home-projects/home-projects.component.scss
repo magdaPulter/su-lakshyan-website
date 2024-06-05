@@ -89,4 +89,50 @@
       }
     }
   }
+  .mobile-view {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .home-projects {
+    background-color: $pink-dark;
+    min-width: 390px;
+    height: 873px;
+    .top,
+    .middle,
+    .bottom {
+      display: none;
+    }
+    .mobile-view {
+      display: inline;
+
+      main {
+        width: 312px;
+        height: 388px;
+        margin: 50px 42px 50px 17px;
+        color: $white;
+        .mobile-top {
+          margin-bottom: 56px;
+
+          p {
+            font-size: 14px;
+            line-height: 17px;
+          }
+          h1 {
+            font-size: 48px;
+            line-height: 62px;
+            letter-spacing: -2px;
+          }
+        }
+        .mobile-moddle {
+          margin-right: 20px;
+          margin-bottom: 56px;
+          p {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
 }
