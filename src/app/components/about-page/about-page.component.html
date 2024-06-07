@@ -15,7 +15,8 @@
             <p>Recycling and production of eco-friendly bags positively impacts environmental issues, while acting in
                 the
                 spirit of Nepali culture by producing Dhaka-related goods.</p>
-            <p> So Su Lakshyan is creating a future where women not only benefit directly, but actively contribute to
+            <p class="desktop"> So Su Lakshyan is creating a future where women not only benefit directly, but actively
+                contribute to
                 building
                 an inclusive, empowered and sustainable society, inspiring positive change beyond enterprise boundaries.
             </p>
@@ -23,12 +24,13 @@
     </section>
 
     <aside>
-        <img src="../../../assets/landscape.png" alt="photo of Nepali landscape">
+        <img class="desktop" src="../../../assets/landscape.png" alt="photo of Nepali landscape">
+        <img class="mobile" src="../../../assets/landscape-mobile.png" alt="photo of Nepali landscape">
     </aside>
 </section>
 <section class="organisation-goal">
     <div class="top">
-        <img src="../../../assets/sulogo.png" alt="su lakshyan logo">
+        <img class="desktop" src="../../../assets/sulogo.png" alt="su lakshyan logo">
         <header>
             <div class="title">
                 <h1>Organization’s goal</h1>
@@ -45,37 +47,24 @@
         <div class="bottom-left"></div>
     </div>
     <div class="goals-container">
-        <div class="goals-item">
-            <h2>ECONOMIC EMPOWERMENT</h2>
-            <p>80% of program graduates secure sustainable employment or start their own businesses within one year</p>
+        @for(goal of organizationGoals; track goal.id) {
+        <div class="goals-item desktop">
+            <h2>{{goal.title | uppercase}}</h2>
+            <p>{{goal.content}}</p>
         </div>
-        <div class="goals-item">
-            <h2>ENVIROMENTAL SUSTAINABILITY</h2>
-            <p>80% of program graduates secure sustainable employment or start their own businesses within one year</p>
+        <div class="goals-item mobile">
+            <h2>{{goal.title}}</h2>
+            <p>{{goal.content}}</p>
         </div>
-        <div class="goals-item">
-            <h2>CULTURAL PRESERVATION</h2>
-            <p>Sustain the production of Nepali Dhaka-related goods, with a 50% increase in market demand</p>
-        </div>
-        <div class="goals-item">
-            <h2>DIGITAL INCLUSION</h2>
-            <p>90% of participants demonstrate improved proficiency in basic computer skills and English language</p>
-        </div>
-        <div class="goals-item">
-            <h2>COMMUNITY ENGAGEMENT</h2>
-            <p>Form partnerships with at least three local businesses and NGOs.</p>
-        </div>
-        <div class="goals-item">
-            <h2>GENDER EQUALITY AND EMPOWERMENT</h2>
-            <p>70% of participants report increased agency and support for their aspirations.</p>
-        </div>
+        }
     </div>
 </section>
 
 <section class="founder">
     <section class="content">
         <aside>
-            <img src="../../../assets/founder.png" alt="photo of foundation founder">
+            <img class="desktop" src="../../../assets/founder.png" alt="photo of foundation founder">
+            <img class="mobile" src="../../../assets/founder-mobile.png" alt="photo of foundation founder">
         </aside>
         <main>
             <h1>Meet the founder of Su Lakshyan</h1>
