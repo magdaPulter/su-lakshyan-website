@@ -1,0 +1,212 @@
+@import "../../styles/config";
+
+.organisation-goal {
+  position: relative;
+  height: 1201px;
+  background-color: $green-primary;
+  .top {
+    display: flex;
+
+    img {
+      justify-self: self-start;
+      align-self: self-start;
+      margin: 104px 68px;
+    }
+
+    header {
+      margin-top: 104px;
+      margin-right: 366px;
+      width: 727px;
+      height: 321px;
+      border-radius: 0px 200px 0px 200px;
+      background-color: #002902;
+      color: $white;
+      padding: 60px 80px 60px 80px;
+
+      .title {
+        width: 513px;
+        height: 201px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h1 {
+          font-size: 60px;
+          line-height: 75px;
+          letter-spacing: -2px; //
+          font-weight: 400;
+          // text-align: right;
+        }
+        p {
+          text-align: right;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .background-shapes {
+    height: 856px;
+    position: absolute;
+    top: 345px;
+    width: 100%;
+    z-index: 0;
+
+    .top-left {
+      position: absolute;
+      height: 542px;
+      width: 339px;
+      border-radius: 0px 200px 0px 0px;
+      background-color: #9e005d;
+      margin-top: 44px;
+    }
+    .top-right {
+      position: absolute;
+      right: 0;
+      margin-top: 81px;
+      height: 458px;
+      width: 366px;
+      border-radius: 0px 200px 0px 0px;
+      background-color: #e8d5e0;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 317px;
+      width: 706px;
+      border-radius: 200px 0px 0px 0px;
+      background-color: #9e005d;
+    }
+    .bottom-left {
+      position: absolute;
+      bottom: 0;
+      height: 270px;
+      width: 568px;
+      border-radius: 0px 200px 0px 0px;
+      background-color: #e8d5e0;
+    }
+  }
+
+  .goals-container {
+    position: absolute;
+    top: 544px;
+    margin: 0px 155px;
+    z-index: 1;
+    width: 1130px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+
+    .goals-item.mobile {
+      display: none;
+    }
+    .goals-item {
+      width: 350px;
+      height: 250px;
+      background-color: $green-primary;
+      border-radius: 50px;
+      border: 1px solid $green-secondary;
+      padding: 40px 30px 40px 30px;
+
+      h2 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: $green-secondary;
+        width: 274px;
+        height: 88px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .organisation-goal {
+    background-color: #002902;
+    min-width: 390px;
+    height: 1615px;
+
+    .top {
+      img.desktop {
+        display: none;
+      }
+      header {
+        margin: 0px;
+        width: 342px;
+        height: 176px;
+        border-radius: 0px;
+        color: $white;
+        padding: 0px;
+        margin: 30px 24px;
+        .title {
+          width: 342px;
+          height: 176px;
+          display: flex;
+          flex-direction: column;
+          // gap: 30px;
+          h1 {
+            font-size: 40px;
+            line-height: 51px;
+          }
+          p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 19px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    .background-shapes {
+      display: none;
+    }
+
+    .goals-container {
+      position: static;
+      margin: 30px 0px 0px 0px;
+      // z-index: 1;
+      width: 100%;
+      height: 1300px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 20px;
+
+      .goals-item.desktop {
+        display: none;
+      }
+      .goals-item.mobile {
+        display: inline;
+      }
+      .goals-item {
+        width: 300px;
+        height: 200px;
+        padding: 40px;
+
+        h2 {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 20px;
+          width: 238px;
+          font-weight: 600;
+          // height: 34px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 19px;
+          color: $green-secondary;
+          width: 247px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

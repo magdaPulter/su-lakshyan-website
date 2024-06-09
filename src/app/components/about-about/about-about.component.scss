@@ -1,0 +1,89 @@
+@import "../../styles/config";
+
+.about {
+  height: 850px; //779+71 (nav)
+  padding-top: 71px;
+  display: flex;
+  background-color: $green-primary;
+
+  .content {
+    width: 720px;
+    height: 779px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green-secondary;
+    main {
+      max-width: 515px;
+      height: 598px;
+      h1 {
+        font-size: 60px;
+        line-height: 75px;
+        font-weight: 400px;
+        letter-spacing: -2px;
+        width: 496px;
+        height: 150px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        padding-right: 10px;
+      }
+      p + p {
+        text-indent: 0.5em;
+        margin-top: 0;
+      }
+    }
+  }
+  aside {
+    img.mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    min-width: 390px;
+    height: 1116px;
+    flex-direction: column;
+    .content {
+      width: 390px;
+      align-items: flex-start;
+      main {
+        width: 304px;
+        height: 487px;
+        margin-top: 51px;
+
+        h1 {
+          font-size: 48px;
+          line-height: 61px;
+          height: 124px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 19px;
+          padding-right: 5px;
+        }
+        p + p {
+          text-indent: 0;
+          margin-bottom: 16px;
+        }
+        p.desktop {
+          display: none;
+        }
+      }
+    }
+
+    aside {
+      img.mobile {
+        display: block;
+        margin-top: 54px;
+      }
+      img.desktop {
+        display: none;
+      }
+    }
+  }
+}
