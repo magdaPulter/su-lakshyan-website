@@ -1,0 +1,31 @@
+<section class="organisation-goal">
+    <div class="top">
+        <img class="desktop" src="../../../assets/sulogo.png" alt="su lakshyan logo">
+        <header>
+            <div class="title">
+                <h1>Organization’s goal</h1>
+                <p>We focus on giving women wings, which is why we have a mission to empower 1500 underprivileged women
+                    in
+                    Pokhara, Nepal, by 2025, achieving sustainable impact through measurable goals.</p>
+            </div>
+        </header>
+    </div>
+    <div class="background-shapes">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-right"></div>
+        <div class="bottom-left"></div>
+    </div>
+    <div class="goals-container">
+        @for(goal of organizationGoals; track goal.id) {
+        <div class="goals-item desktop">
+            <h2>{{goal.title | uppercase}}</h2>
+            <p>{{goal.content}}</p>
+        </div>
+        <div class="goals-item mobile">
+            <h2>{{goal.title}}</h2>
+            <p>{{goal.content}}</p>
+        </div>
+        }
+    </div>
+</section>

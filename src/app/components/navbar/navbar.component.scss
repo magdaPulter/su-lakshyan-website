@@ -59,11 +59,11 @@ nav {
     display: none;
   }
   nav {
-    width: 390px;
+    // min-width: 390px;
     ul {
       padding: 0px;
       justify-content: flex-start;
-
+      // min-width: 390px;
       a.donate {
         margin-left: 19px;
       }
