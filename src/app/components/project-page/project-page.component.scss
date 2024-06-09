@@ -1,7 +1,7 @@
 @import "../../styles/config";
 
 .projects {
-  min-height: 2316px;
+  // min-height: 2316px;
   padding-top: 71px;
   background-color: $green-primary;
   // background-color: $light-green;
@@ -17,7 +17,7 @@
   main {
     margin-top: 95px;
     max-width: 1280px;
-    min-height: 1748px;
+    // min-height: 1748px;
 
     .images {
       height: 428px;
@@ -93,10 +93,15 @@
       width: 161px;
       height: 45px;
       border-radius: 100px;
+      color: $green-secondary;
       border: 1px solid $green-secondary;
       padding: 5px 23px 5px 23px;
       background-color: inherit;
       cursor: pointer;
+    }
+    button.disabled {
+      color: grey;
+      border: 1px solid grey;
     }
   }
 }
