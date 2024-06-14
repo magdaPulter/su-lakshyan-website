@@ -1,0 +1,122 @@
+@import "../../styles/config";
+
+.donate {
+  background-color: $green-primary;
+  color: $green-secondary;
+
+  .support {
+    height: 1201px;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      z-index: 1;
+      top: 185px;
+      left: 40px;
+    }
+    main {
+      position: absolute;
+      top: 215px;
+      right: 480px;
+      z-index: 1;
+      width: 515px;
+      height: 599px;
+
+      h1 {
+        font-size: 48px;
+        line-height: 61px;
+        letter-spacing: -2px;
+        width: 496px;
+        margin-bottom: 40px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        p {
+          font-size: 20px;
+          line-height: 24px;
+
+          span {
+            font-weight: 700;
+          }
+        }
+        :nth-child(2) {
+          margin-top: 20px;
+        }
+        :nth-child(3) {
+          line-height: 30px;
+        }
+      }
+    }
+    .background-shapes {
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 0;
+
+      .top-left {
+        position: absolute;
+        bottom: 270px;
+        height: 416px;
+        width: 364px;
+        border-radius: 0px 200px 0px 0px;
+        background-color: #9e005d;
+      }
+      .top-right {
+        position: absolute;
+        right: 0;
+        bottom: 317px;
+        height: 667px;
+        width: 366px;
+        border-radius: 0px 200px 0px 0px;
+        background-color: #e8d5e0;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 718px;
+        height: 317px;
+        border-radius: 200px 0px 0px 0px;
+        background-color: #9e005d;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: 0;
+        height: 270px;
+        width: 594px;
+        border-radius: 0px 200px 0px 0px;
+        background-color: #e8d5e0;
+      }
+    }
+  }
+  .qr-code {
+    height: 761px;
+    padding-top: 158px;
+    padding-left: 76px;
+    .content {
+      height: 498px;
+      width: 1272px;
+      display: flex;
+      main {
+        width: 566px;
+        height: 498px;
+        margin-right: 76px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 32px;
+          line-height: 41px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
