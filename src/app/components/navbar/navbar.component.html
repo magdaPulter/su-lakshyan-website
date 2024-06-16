@@ -1,12 +1,16 @@
 <nav>
     <a [routerLink]="'/'"><img src="../../../assets/sulogo.png" alt="su lakshyan logo"></a>
-    <ul>
+    <ul [ngClass]="isMenuOpen() ? 'is-open' : '' ">
+        <li><a class="nav-item" [ngStyle]="{'display': isMenuOpen() ? 'block' :'none' }" [routerLink]="'/'">HOME</a>
+        </li>
         <li><a class="nav-item" [routerLink]="'/about'">ABOUT US</a></li>
         <li><a class="nav-item" [routerLink]="'/projects'">OUR PROJECTS</a></li>
         <li><a class="nav-item">NEPALI</a></li>
         <li><a class="nav-item">CONTACT US</a></li>
-        <li><a class="donate" [routerLink]="'/donate'">DONATE</a></li>
     </ul>
-    <button><i class="icon-menu"></i></button>
-    <!-- <button><img src="../../../assets/menu.png" alt="su lakshyan logo"></button> -->
+    <a class="donate" [routerLink]="'/donate'">DONATE</a>
+
+    <button (click)="toggleMenu()" aria-expanded="false">
+        <img src="{{isMenuOpen() ? close : open}}" [ngStyle]="{'height': isMenuOpen() ? '30px' : '26px' }" alt="menu">
+    </button>
 </nav>
