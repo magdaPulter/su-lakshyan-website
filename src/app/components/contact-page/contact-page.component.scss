@@ -1,0 +1,69 @@
+@import "../../styles/config";
+
+.contact-us {
+  height: 850px;
+  background-color: $green-primary;
+  color: $green-secondary;
+  display: flex;
+
+  .text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      h1 {
+        font-size: 48px;
+        line-height: 70px;
+        padding: 0px 7px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 0px 7px;
+      }
+      p:nth-child(2) {
+        text-indent: 0.5em;
+      }
+    }
+  }
+}
+
+.contact-form {
+  min-height: 850px;
+  font-size: 20px;
+  line-height: 36px;
+  color: $white;
+  background-color: $green-secondary;
+  display: flex;
+  justify-content: space-around;
+
+  .form {
+    margin-top: 124px;
+    p {
+      margin-left: 30px;
+    }
+    iframe {
+      height: 1500px;
+      //   width: 500px;
+    }
+  }
+
+  .addres {
+    width: 282px;
+    margin-top: 200px;
+    p {
+      margin-bottom: 50px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
