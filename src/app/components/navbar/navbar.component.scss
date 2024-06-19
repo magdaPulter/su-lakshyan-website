@@ -62,7 +62,8 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    width: 390px;
+    width: 100%;
+    // width: 390px;
     a img {
       display: none;
     }
