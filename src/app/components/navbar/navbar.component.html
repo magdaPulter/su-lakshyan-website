@@ -1,12 +1,13 @@
 <nav>
     <a [routerLink]="'/'"><img src="../../../assets/sulogo.png" alt="su lakshyan logo"></a>
     <ul [ngClass]="isMenuOpen() ? 'is-open' : '' ">
-        <li><a class="nav-item" [ngStyle]="{'display': isMenuOpen() ? 'block' :'none' }" [routerLink]="'/'">HOME</a>
+        <li><a (click)="onMenuClosed()" class="nav-item" [ngStyle]="{'display': isMenuOpen() ? 'block' :'none' }"
+                [routerLink]="'/'">HOME</a>
         </li>
-        <li><a class="nav-item" [routerLink]="'/about'">ABOUT US</a></li>
-        <li><a class="nav-item" [routerLink]="'/projects'">OUR PROJECTS</a></li>
-        <li><a class="nav-item">NEPALI</a></li>
-        <li><a class="nav-item" [routerLink]="'/contact'">CONTACT US</a></li>
+        <li><a (click)="onMenuClosed()" class="nav-item" [routerLink]="'/about'">ABOUT US</a></li>
+        <li><a (click)="onMenuClosed()" class="nav-item" [routerLink]="'/projects'">OUR PROJECTS</a></li>
+        <li><a (click)="onMenuClosed()" class="nav-item">NEPALI</a></li>
+        <li><a (click)="onMenuClosed()" class="nav-item" [routerLink]="'/contact'">CONTACT US</a></li>
     </ul>
     <a class="donate" [routerLink]="'/donate'">DONATE</a>
 
