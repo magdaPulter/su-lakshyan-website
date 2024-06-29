@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/su-lakshyan-website/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
