@@ -9,14 +9,13 @@
                         class="icon-instagram"></i></a></li>
         </ul>
     </header>
-    <section class="carousel">
-        <!-- <button class="arrow"><i class="icon-left"></i></button> -->
-        <img src="../../../assets/leaf.png" alt="photo of woman making leaf plate">
-        <img src="../../../assets/plastic.png" alt="photo of woman making leaf plate">
-        <img src="../../../assets/woman-pics-up-trash.png" alt="photo of woman making leaf plate">
-        <!-- <button class="arrow"><i class="icon-right"></i></button> -->
-    </section>
 
+    <section class="carousel">
+        <button (click)="onLeftClicked()"> <img src="../../../assets/button-left.svg" alt=""> </button>
+        @for (selectedImage of selected(); track selectedImage.id) {
+        <img src="../../../assets/{{selectedImage.name}}" alt="{{selectedImage.alt}}">}
+        <button (click)="onRightClicked()"> <img src="../../../assets/button-right.svg" alt=""> </button>
+    </section>
 
     <section class="mobile-view">
         <section class="carousel-mobile">
