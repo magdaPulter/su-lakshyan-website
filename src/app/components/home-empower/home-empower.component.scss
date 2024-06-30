@@ -16,18 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    button.arrow {
-      cursor: pointer;
-      border-radius: 50%;
-      border: solid 1px $green-secondary;
+    button {
+      border: none;
       background-color: inherit;
-      width: 45px;
-      height: 45px;
-      i.icon-right,
-      i.icon-left {
-        color: $green-secondary;
-        font-size: 28px;
-        // font-weight: 100;
+      cursor: pointer;
+      img {
+        width: 45px;
+        height: 45px;
       }
     }
   }

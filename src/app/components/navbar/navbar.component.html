@@ -9,7 +9,7 @@
         <li><a (click)="onMenuClosed()" class="nav-item">NEPALI</a></li>
         <li><a (click)="onMenuClosed()" class="nav-item" [routerLink]="'/contact'">CONTACT US</a></li>
     </ul>
-    <a class="donate" [routerLink]="'/donate'">DONATE</a>
+    <a (click)="onMenuClosed()" class="donate" [routerLink]="'/donate'">DONATE</a>
 
     <button (click)="toggleMenu()" aria-expanded="false">
         <img src="{{isMenuOpen() ? close : open}}" [ngStyle]="{'height': isMenuOpen() ? '30px' : '26px' }" alt="menu">
