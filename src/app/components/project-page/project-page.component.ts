@@ -1,4 +1,10 @@
-import { Component, DoCheck, WritableSignal, signal } from '@angular/core';
+import {
+  Component,
+  DoCheck,
+  WritableSignal,
+  computed,
+  signal,
+} from '@angular/core';
 import { ProjectModel } from '../../models/project-model.model';
 import { CommonModule } from '@angular/common';
 
@@ -9,97 +15,93 @@ import { CommonModule } from '@angular/common';
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.scss',
 })
-export class ProjectPageComponent implements DoCheck {
+export class ProjectPageComponent {
   readonly projects: ProjectModel[] = [
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '1English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '1',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '2English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '2',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '3English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '3',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '4English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '4',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '5English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '5',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '6English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '6',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '7English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '7',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '8English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '8',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '9English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '9',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '10English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '10',
     },
     {
       date: '12.02.2024',
-      title: 'English educations workshops',
+      title: '11English educations workshops',
       content:
         'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
       id: '11',
     },
-  ];
+  ].reverse();
 
   count: WritableSignal<number> = signal(2);
-  displayedProjects: WritableSignal<ProjectModel[]> = signal(this.projects);
-  isButtonActive: WritableSignal<boolean> = signal(true);
+  displayedProjects = computed(() => this.projects.slice(0, this.count()));
+  isButtonActive = computed(
+    () => this.displayedProjects().length !== this.projects.length
+  );
 
-  ngDoCheck(): void {
-    this.displayedProjects.set(this.projects.slice(0, this.count()));
-    if (this.displayedProjects().length === this.projects.length) {
-      this.isButtonActive.set(false);
-    }
-  }
   onLoadMore() {
     this.count.update((value) => value + 2);
   }
