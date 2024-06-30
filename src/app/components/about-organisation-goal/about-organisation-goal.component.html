@@ -19,7 +19,7 @@
     <div class="goals-container">
         @for(goal of organizationGoals; track goal.id) {
         <div class="goals-item desktop">
-            <h2>{{goal.title | uppercase}}</h2>
+            <h2>{{goal.title }}</h2>
             <p>{{goal.content}}</p>
         </div>
         <div class="goals-item mobile">
