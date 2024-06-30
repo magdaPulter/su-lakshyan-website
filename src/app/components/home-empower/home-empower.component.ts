@@ -11,7 +11,7 @@ import { Image } from '../../models/image.model';
 export class HomeEmpowerComponent {
   readonly leaf: Image = {
     name: 'leaf.png',
-    alt: '',
+    alt: 'A bowl made from leaf.',
     id: '1',
   };
   readonly plastic: Image = {
@@ -31,12 +31,12 @@ export class HomeEmpowerComponent {
   };
   readonly womanSewing: Image = {
     name: 'woman-sewing.png',
-    alt: '',
+    alt: 'A woman sewing with a sewing machine in a workshop.',
     id: '5',
   };
   readonly materialMeasuring: Image = {
     name: 'material-measuring.png',
-    alt: '',
+    alt: 'Group of women learning the sewing process, working together at a table with fabrics and sewing tools.',
     id: '6',
   };
 
