@@ -1,21 +1,22 @@
 @import "../../styles/config";
 
 .about {
-  height: 850px; //779+71 (nav)
+  height: 850px;
+  width: 100%;
   padding-top: 71px;
   display: flex;
   background-color: $green-primary;
 
   .content {
-    width: 720px;
-    height: 779px;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $green-secondary;
     main {
       max-width: 515px;
-      height: 598px;
+      height: 406px;
       h1 {
         font-size: 60px;
         line-height: 75px;
@@ -30,15 +31,47 @@
         line-height: 24px;
         padding-right: 10px;
       }
-      p + p {
-        text-indent: 0.5em;
-        margin-top: 0;
-      }
     }
   }
   aside {
+    width: 50%;
+    img.desktop {
+      width: 100%;
+    }
     img.mobile {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    height: 584px;
+
+    max-width: 1024px;
+    .content {
+      main {
+        width: 344px;
+        height: 373px;
+        h1 {
+          font-size: 48px;
+          line-height: 63px;
+          width: 272px;
+          height: 124px;
+          margin-bottom: 40px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 19px;
+          padding-right: 0px;
+        }
+      }
+    }
+
+    aside {
+      img.desktop {
+        max-width: 503px;
+      }
     }
   }
 }
@@ -63,16 +96,7 @@
           width: 304px;
         }
         p {
-          font-size: 16px;
-          line-height: 19px;
           padding-right: 5px;
-        }
-        p + p {
-          text-indent: 0;
-          margin-bottom: 16px;
-        }
-        p.desktop {
-          display: none;
         }
       }
     }

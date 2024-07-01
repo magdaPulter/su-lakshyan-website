@@ -36,7 +36,31 @@
     }
   }
 }
-
+@media (max-width: 1024px) {
+  .founder {
+    height: 645px;
+    .content {
+      width: 800px;
+      height: 346px;
+      main {
+        h1 {
+          font-size: 40px;
+          line-height: 51px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 19px;
+          padding: 0px 20px 0px 0px;
+        }
+      }
+      aside {
+        img {
+          width: 326px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .founder {
     background-color: $green-primary;
@@ -73,6 +97,7 @@
 
         img.mobile {
           display: inline;
+          width: 285px;
         }
       }
     }
