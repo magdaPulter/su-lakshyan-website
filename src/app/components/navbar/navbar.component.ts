@@ -24,5 +24,6 @@ export class NavbarComponent {
 
   onMenuClosed() {
     this.isMenuOpen.set(false);
+    window.scrollTo(0, 0);
   }
 }
