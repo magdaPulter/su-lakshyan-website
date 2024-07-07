@@ -1,10 +1,15 @@
 <section class="home-create">
     <img src="../../../assets/old-woman.png" alt="Nepali woman learning to craft a bowl from a leaf.">
     <main>
-        <h1>Creating opportunities for women</h1>
-        <p>Su Lakshyan is creating a future where women not only benefit directly, but actively contribute to
-            building an inclusive, empowered and sustainable society, inspiring positive change beyond enterprise
-            boundaries.
-        </p>
+        <div class="content">
+            <h1>Creating opportunities for women</h1>
+            <p>Su Lakshyan is creating a future where women not only benefit directly, but actively contribute to
+                building an inclusive, empowered and sustainable society, inspiring positive change beyond enterprise
+                boundaries.
+            </p>
+            <div class="read-more">
+                <app-read-more-btn [routerLink]="'/about'" [isAboutPage]="true"></app-read-more-btn>
+            </div>
+        </div>
     </main>
 </section>

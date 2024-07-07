@@ -17,3 +17,10 @@ button {
     margin-left: 5px;
   }
 }
+
+@media (max-width: 1024px) {
+  button {
+    width: 129px;
+    height: 40px;
+  }
+}

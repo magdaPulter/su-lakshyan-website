@@ -24,6 +24,26 @@
     color: $black;
   }
 }
+@media (max-width: 1024px) {
+  .motto {
+    height: 678px;
+
+    main {
+      width: 919px;
+      height: 382px;
+      margin-top: 148px;
+    }
+
+    blockquote {
+      font-size: 52px;
+      line-height: 67px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .motto {

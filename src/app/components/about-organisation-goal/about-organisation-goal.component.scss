@@ -91,7 +91,10 @@
   .goals-container {
     position: absolute;
     top: 544px;
-    margin: 0px 155px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     z-index: 1;
     width: 1130px;
     height: 540px;
@@ -113,7 +116,7 @@
 
       h2 {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 34px;
         margin-bottom: 40px;
         font-weight: 600;
       }
@@ -124,6 +127,75 @@
         width: 274px;
         height: 88px;
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .organisation-goal {
+    height: 1351px;
+    max-width: 1024px;
+
+    .top {
+      width: 66%;
+
+      img {
+        width: 143px;
+        justify-self: center;
+        align-self: center;
+        margin-top: 188px;
+      }
+      header {
+        border-radius: 200px 0px 200px 0px;
+        margin-top: 108px;
+        margin-right: 0px;
+        width: 547px;
+        height: 279px;
+        padding: 40px 110px 80px 60px;
+        .title {
+          width: 444px;
+          height: 193px;
+
+          h1 {
+            font-size: 48px;
+          }
+          p {
+            text-align: left;
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .background-shapes {
+      height: 964px;
+      top: 387px;
+
+      .top-left {
+        height: 456px;
+        width: 241px;
+        margin-top: 0px;
+      }
+      .top-right {
+        margin-top: 0px;
+        height: 456px;
+        width: 271px;
+      }
+      .bottom-right {
+        height: 508px;
+        width: 342px;
+      }
+      .bottom-left {
+        height: 300px;
+        width: 358px;
+        border-radius: 0px 200px 0px 0px;
+        background-color: #e8d5e0;
+      }
+    }
+    .goals-container {
+      top: 431px;
+      width: 772px;
+      height: 830px;
     }
   }
 }

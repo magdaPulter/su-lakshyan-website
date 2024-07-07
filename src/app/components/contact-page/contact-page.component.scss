@@ -36,7 +36,8 @@
       }
     }
   }
-  img.mobile {
+  img.mobile,
+  img.tablet {
     display: none;
   }
 }
@@ -76,6 +77,38 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .contact-us {
+    .text {
+      main {
+        width: 311px;
+
+        .content {
+          p {
+            font-size: 16px;
+            line-height: 19px;
+            padding: 0px;
+          }
+        }
+      }
+    }
+
+    img.tablet {
+      display: block;
+    }
+    img.mobile,
+    img.desktop {
+      display: none;
+    }
+  }
+  .contact-form {
+    .addres {
+      font-size: 18px;
+      margin-left: 50px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .contact-us {
     width: 100%;
@@ -109,7 +142,8 @@
       display: block;
       width: 390px;
     }
-    img.desktop {
+    img.desktop,
+    img.tablet {
       display: none;
     }
   }
