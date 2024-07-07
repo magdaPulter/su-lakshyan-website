@@ -6,9 +6,7 @@
   background-color: $green-primary;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
   align-items: center;
-  // font-family: $main-font;
 
   .carousel {
     width: 1362px;
@@ -32,7 +30,6 @@
   }
 
   header {
-    width: 582px;
     width: 600px;
     height: 197px;
     text-align: center;
@@ -59,6 +56,37 @@
           font-size: 36px;
           color: $green-secondary;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .empower {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    height: 712px;
+    justify-content: space-between;
+    .carousel {
+      width: 942px;
+      height: 250px;
+      button {
+        img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+      img.img-carousel {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    header {
+      width: 582px;
+      height: 130px;
+      h1 {
+        line-height: 65px;
       }
     }
   }

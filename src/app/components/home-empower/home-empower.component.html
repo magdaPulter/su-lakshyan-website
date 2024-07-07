@@ -13,7 +13,7 @@
     <section class="carousel">
         <button (click)="onLeftClicked()"> <img src="../../../assets/button-left.svg" alt=""> </button>
         @for (selectedImage of selected(); track selectedImage.id) {
-        <img src="../../../assets/{{selectedImage.name}}" alt="{{selectedImage.alt}}">}
+        <img class="img-carousel" src="../../../assets/{{selectedImage.name}}" alt="{{selectedImage.alt}}">}
         <button (click)="onRightClicked()"> <img src="../../../assets/button-right.svg" alt=""> </button>
     </section>
 
