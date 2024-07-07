@@ -1,0 +1,12 @@
+<section class="project-detail">
+    <app-project-images></app-project-images>
+
+    <main *ngIf="projectDetail$ | async as project">
+        <span>{{ project.date }}</span>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.content}}</p>
+        <div class="go-back">
+            <button [routerLink]="'/projects/'">GO BACK</button>
+        </div>
+    </main>
+</section>

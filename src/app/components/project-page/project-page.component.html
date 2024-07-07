@@ -3,20 +3,16 @@
         <h1>Our Projects</h1>
     </header>
     <main>
-        <section class="images">
-            <img src="../../../assets/material-measuring.png" alt="photo of women measuring materials">
-            <img src="../../../assets/leaf.png" alt="photo of leaf plate">
-            <img src="../../../assets/woman-sewing.png" alt="photo of sewing woman">
-        </section>
+        <app-project-images></app-project-images>
         <ul class="projects-list">
             @for (project of displayedProjects(); track project.id) {
             <li>
                 <div class="item-content">
                     <span>{{ project.date }}</span>
                     <h2>{{ project.title }}</h2>
-                    <p>{{ project.content }}</p>
+                    <p>{{ project.content | short}}</p>
                 </div>
-                <button>Read more</button>
+                <button [routerLink]="'/projects/'+project.id">Read more</button>
             </li>
             }
         </ul>

@@ -1,0 +1,109 @@
+@import "../../styles/config";
+
+.project-detail {
+  padding: 184px 80px 73px 80px;
+  background-color: $green-primary;
+
+  main {
+    width: 1071px;
+    padding: 0px 61px;
+    margin-top: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $green-secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 58px;
+    }
+    p {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .go-back {
+      button {
+        width: 161px;
+        height: 45px;
+        border-radius: 100px;
+        color: $green-secondary;
+        border: 1px solid $green-secondary;
+        padding: 5px 23px 5px 23px;
+        background-color: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-detail {
+    padding: 184px 0px 61px 0px;
+    background-color: $green-primary;
+
+    main {
+      width: 722px;
+      padding: 0px;
+      margin-left: 91px;
+      span {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .go-back {
+        button {
+          width: 129px;
+          height: 40px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 55px 0px 73px 0px;
+    background-color: $green-primary;
+
+    main {
+      width: 336px;
+      padding: 0px;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 60px;
+      span {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      h2 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 19px;
+      }
+      .go-back {
+        button {
+          width: 115px;
+          height: 40px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}

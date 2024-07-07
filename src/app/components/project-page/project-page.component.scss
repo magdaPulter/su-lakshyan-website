@@ -14,19 +14,6 @@
   main {
     margin-top: 95px;
 
-    .images {
-      height: 428px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      img {
-        width: 400px;
-        height: 400px;
-        border: 1px solid $green-secondary;
-        border-radius: 50px;
-      }
-    }
-
     .projects-list {
       display: flex;
       flex-wrap: wrap;
@@ -49,6 +36,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          color: $green-secondary;
 
           span {
             font-size: 20px;
@@ -73,6 +61,7 @@
           line-height: 19px;
           text-decoration: underline;
           background-color: inherit;
+          color: $green-secondary;
         }
       }
     }
@@ -111,14 +100,6 @@
     main {
       width: 820px;
       margin: auto;
-      .images {
-        img {
-          width: 380px;
-        }
-        :nth-child(1) {
-          display: none;
-        }
-      }
       .projects-list {
         li {
           width: 380px;
@@ -165,19 +146,6 @@
     }
     main {
       width: 100%;
-      .images {
-        justify-content: center;
-        flex-direction: column;
-        height: 800px;
-        gap: 40px;
-        margin: 0px;
-        padding: 0px;
-
-        img {
-          width: 340px;
-          height: 340px;
-        }
-      }
       .projects-list {
         justify-content: center;
         li {
