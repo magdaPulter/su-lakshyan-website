@@ -58,6 +58,9 @@
             }
           }
         }
+        img {
+          margin: -5px;
+        }
       }
     }
 
@@ -167,6 +170,7 @@
         }
         img.woman {
           width: 302px;
+          margin: -5px;
         }
         .text {
           background-color: $pink-dark;
@@ -256,14 +260,11 @@
     .tablet-view {
       display: none;
     }
-    // .top,
-    // .middle,
-    // .bottom {
-    //   display: none;
-    // }
     .mobile-view {
       display: inline;
-
+      img {
+        margin: -5px;
+      }
       main {
         width: 312px;
         height: 388px;

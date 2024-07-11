@@ -119,10 +119,6 @@
           font-size: 20px;
           line-height: 24px;
         }
-        p.mobile,
-        .qr img.mobile {
-          display: none;
-        }
       }
     }
   }
@@ -223,13 +219,10 @@
           }
           .qr {
             align-self: self-start;
-            img.desktop {
+            img {
               display: block;
               width: 142px;
               margin-bottom: 50px;
-            }
-            img.mobile {
-              display: none;
             }
           }
         }
@@ -246,15 +239,13 @@
     .support {
       position: static;
 
-      img {
-        display: none;
-      }
       main {
         top: 152px;
+        margin: 0px;
         left: 23px;
         z-index: 1;
         width: 322px;
-        height: 564px;
+        height: 644px;
 
         h1 {
           font-size: 40px;
@@ -279,51 +270,27 @@
     .qr-code {
       padding-top: 0px;
       padding-left: 0px;
-      background-color: #9e005d;
       height: 991px;
       .content {
-        width: 322px;
+        padding: 50px, 0px, 0px, 23px;
         flex-direction: column-reverse;
         height: 100%;
         width: 100%;
         margin: 0px;
-        img.desktop {
-          display: none;
-        }
-        img.mobile {
-          display: block;
-          width: 390px;
-          height: 416px;
-        }
+
         main {
-          width: 332px;
-          margin: 50px 0px 0px 19px;
-          padding: 50px 0px;
-          // margin: 0px;
-          flex-direction: column-reverse;
+          padding-top: 50px;
+          margin-left: 23px;
+
           gap: 50px;
+
           .qr {
-            align-self: center;
-            img.desktop {
-              display: none;
+            img {
+              margin-bottom: 40px;
             }
-            img.mobile {
-              display: block;
-              width: 146px;
-              height: 146px;
-            }
-          }
-          h1 {
-            display: none;
           }
           p {
-            color: $white;
-          }
-          p.mobile {
-            display: block;
-          }
-          p.desktop {
-            display: none;
+            padding-right: 5px;
           }
         }
       }
