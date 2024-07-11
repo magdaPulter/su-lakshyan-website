@@ -5,6 +5,7 @@ import { DonatePageComponent } from './components/donate-page/donate-page.compon
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectDetailPageComponent } from './components/project-detail-page/project-detail-page.component';
+import { NepaliPageComponent } from './components/nepali-page/nepali-page.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'donate', component: DonatePageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'projects/:id', component: ProjectDetailPageComponent },
+  { path: 'nepali', component: NepaliPageComponent },
 ];
