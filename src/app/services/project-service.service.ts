@@ -10,72 +10,36 @@ export class ProjectServiceService {
     return [
       {
         date: '12.02.2024',
-        title: '1English educations workshops',
+        title: 'Life Skills*',
         content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
-        id: '1',
-      },
-      {
-        date: '12.02.2024',
-        title: '2English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
-        id: '2',
-      },
-      {
-        date: '12.02.2024',
-        title: '3English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
-        id: '3',
-      },
-      {
-        date: '12.02.2024',
-        title: '4English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
-        id: '4',
-      },
-      {
-        date: '12.02.2024',
-        title: '5English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
-        id: '5',
-      },
-      {
-        date: '12.02.2024',
-        title: '6English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
+          '*By enrolling in one of the main projects led by Su Lakshyan (Eco Friendly Bag Production, Recycling Plastics and Production of Materials or Handcrafting Traditional Dhaka Products ), participants also benefit from general life skills training. By joining us, trainees can enhance their personal and professional development through comprehensive six-day life skills sessions. These sessions are designed to equip them with essential abilities to navigate everyday challenges and achieve their personal and professional goals. During the course participants learn and practice vital daily life skills, including: Effective communication: mastering the art of expressing themselves clearly and listening actively. Problem solving: developing strategies to identify issues and implement solutions. Critical thinking: enhancing their ability to analyze various situations and make informed decisions. Decision making: learning to make choices confidently and responsibly. Interpersonal skills: improving human interactions and building stronger relationships. Stress management: discovering techniques to manage stress and maintain well-being.',
         id: '6',
       },
       {
         date: '12.02.2024',
-        title: '7English educations workshops',
+        title: 'Computer Training*',
         content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
+          '*By enrolling in one of the main projects led by Su Lakshyan (Eco Friendly Bag Production, Recycling Plastics and Production of Materials or Handcrafting Traditional Dhaka Products ), participants also benefit from computer training. Our 26-day computer training program is designed to equip participants with the skills needed in the modern workplace. Trainees have the opportunity to learn basic computer skills, including professional emailing. They gain hands-on experience in using various computer applications and tools. Training also includes drafting clear and concise emails messages for professional purposes. We coach women in job application strategies. At the same time, they learn market research techniques to sell their products. This training enhances computer literacy and boosts professional capabilities in the digital environment, therefore contributing to stopping the poverty cycle.',
         id: '7',
       },
       {
         date: '12.02.2024',
-        title: '8English educations workshops',
+        title: 'English Courses*',
         content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
+          'Our English classes help our Trainees effectively market their products, such as eco-friendly bags, by improving their communication skills. During the 26 day course, female students learn to communicate in English to a degree that will allow them to effectively communicate.  This course is designed to increase sales skills and confidence in communicating with international clients. Therefore, our classes help our participants effectively sell their products. We encourage all Nepali women in need of support in this area to join us to improve their language skills and increase the reach of their business. By introducing this initiative, we also contribute to breaking the cycle of poverty.',
         id: '8',
       },
       {
         date: '12.02.2024',
-        title: '9English educations workshops',
-        content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
+        title: 'Handcrafting Traditional Dhaka Products',
+        content: '...',
         id: '9',
       },
       {
         date: '12.02.2024',
-        title: '10English educations workshops',
+        title: 'Recycling Plastics and Production of Materials',
         content:
-          'Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English language. Goal: 90% of participants demonstrate improved proficiency in basic computer skills and English langua',
+          'With this project, we aim to address plastic waste by converting it into valuable, usable materials. This initiative involves collecting plastic waste, processing it through recycling methods, and producing various products that can be reintroduced into the market. These can include items for everyday use, as well as those that fulfill decorative functions in homes or hotels. For example, flower pots, trays and others. The project combines environmental stewardship with innovative manufacturing techniques to create a sustainable cycle for plastic materials. The most important goals of the project are: Decrease the amount of plastic waste in landfills and the environment. Promote recycling by engaging the community in plastic recycling programs. Develop innovative products from recycled plastics to demonstrate the potential of recycled materials. Increase economic opportunities by creating jobs and enabling growth through the recycling and production process.',
         id: '10',
       },
       {
