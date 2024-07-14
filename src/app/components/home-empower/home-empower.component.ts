@@ -1,5 +1,12 @@
-import { Component, WritableSignal, computed, signal } from '@angular/core';
+import {
+  Component,
+  WritableSignal,
+  computed,
+  inject,
+  signal,
+} from '@angular/core';
 import { Image } from '../../models/image.model';
+import { CarouselServiceService } from '../../services/carousel-service.service';
 
 @Component({
   selector: 'app-home-empower',
@@ -9,45 +16,8 @@ import { Image } from '../../models/image.model';
   styleUrl: './home-empower.component.scss',
 })
 export class HomeEmpowerComponent {
-  readonly leaf: Image = {
-    name: 'leaf.png',
-    alt: 'A bowl made from leaf.',
-    id: '1',
-  };
-  readonly plastic: Image = {
-    name: 'plastic.png',
-    alt: '',
-    id: '2',
-  };
-  readonly woman: Image = {
-    name: 'woman-pics-up-trash.png',
-    alt: '',
-    id: '3',
-  };
-  readonly underTheRoof: Image = {
-    name: 'underTheRoof.png',
-    alt: '',
-    id: '4',
-  };
-  readonly womanSewing: Image = {
-    name: 'woman-sewing.png',
-    alt: 'A woman sewing with a sewing machine in a workshop.',
-    id: '5',
-  };
-  readonly materialMeasuring: Image = {
-    name: 'material-measuring.png',
-    alt: 'Group of women learning the sewing process, working together at a table with fabrics and sewing tools.',
-    id: '6',
-  };
-
-  allImages: WritableSignal<Image[]> = signal([
-    this.plastic,
-    this.leaf,
-    this.woman,
-    this.underTheRoof,
-    this.womanSewing,
-    this.materialMeasuring,
-  ]);
+  images = inject(CarouselServiceService).getImage();
+  allImages: WritableSignal<Image[]> = signal(this.images);
   firstIndex: WritableSignal<number> = signal(1);
   middleIndex: WritableSignal<number> = signal(2);
   lastIndex: WritableSignal<number> = signal(3);
@@ -59,6 +29,8 @@ export class HomeEmpowerComponent {
       this.allImages()[this.lastIndex()]
     )
   );
+
+  selectedMobile = computed(() => this.allImages()[this.lastIndex()]);
 
   setIndexLeft(selectedIndex: WritableSignal<number>) {
     if (selectedIndex() < 1) {
@@ -84,5 +56,15 @@ export class HomeEmpowerComponent {
     this.setIndexRight(this.firstIndex);
     this.setIndexRight(this.middleIndex);
     this.setIndexRight(this.lastIndex);
+  }
+
+  onLeftMobileClicked() {
+    console.log(this.selectedMobile(), this.lastIndex());
+    this.setIndexLeft(this.lastIndex);
+  }
+
+  onRightMobileClicked() {
+    this.setIndexRight(this.lastIndex);
+    console.log(this.selectedMobile(), this.lastIndex());
   }
 }
