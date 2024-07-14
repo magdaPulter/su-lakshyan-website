@@ -57,7 +57,7 @@ footer {
 @media (max-width: 768px) {
   footer {
     height: 508px;
-    min-width: 390px;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

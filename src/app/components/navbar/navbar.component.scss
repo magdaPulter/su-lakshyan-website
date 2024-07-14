@@ -95,6 +95,10 @@ nav {
       margin-top: auto;
       margin-bottom: auto;
     }
+
+    @media (max-width: 786px) {
+      max-width: 100%;
+    }
   }
 
   nav.is-open {
