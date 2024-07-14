@@ -146,8 +146,8 @@
 
     img.mobile {
       display: block;
-      width: 390px;
-      margin-left: -3px;
+      max-width: 390px;
+      margin-left: -5px;
     }
     img.desktop,
     img.tablet {
