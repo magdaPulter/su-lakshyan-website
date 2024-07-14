@@ -29,7 +29,10 @@
 }
 @media (max-width: 768px) {
   .images {
-    width: 390px;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
     img {
       width: 340px;
       height: 340px;
@@ -43,6 +46,5 @@
     :nth-child(3) {
       display: none;
     }
-    justify-content: center;
   }
 }
