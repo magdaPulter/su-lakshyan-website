@@ -32,4 +32,8 @@ export class ProjectPageComponent {
   onLoadMore() {
     this.count.update((value) => value + 2);
   }
+
+  goToTheTop() {
+    window.scrollTo(0, 0);
+  }
 }

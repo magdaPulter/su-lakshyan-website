@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ReadMoreBtnComponent {
   @Input() isAboutPage!: boolean;
+
+  goToTheTop() {
+    window.scrollTo(0, 0);
+  }
 }

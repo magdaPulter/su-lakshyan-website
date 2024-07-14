@@ -1,6 +1,6 @@
-<nav>
+<nav [ngClass]="isMenuOpen() ? 'is-open' : '' ">
     <a [routerLink]="'/'"><img src="../../../assets/sulogo.png" alt="su lakshyan logo"></a>
-    <ul [ngClass]="isMenuOpen() ? 'is-open' : '' ">
+    <ul>
         <li><a (click)="onMenuClosed()" class="nav-item" [ngStyle]="{'display': isMenuOpen() ? 'block' :'none' }"
                 [routerLink]="'/'">HOME</a>
         </li>

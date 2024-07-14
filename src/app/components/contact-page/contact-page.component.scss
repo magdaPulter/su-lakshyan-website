@@ -110,12 +110,6 @@
       display: none;
     }
   }
-  // .contact-form {
-  //   .addres {
-  //     font-size: 18px;
-  //     margin-left: 50px;
-  //   }
-  // }
 }
 
 @media (max-width: 768px) {
@@ -153,6 +147,7 @@
     img.mobile {
       display: block;
       width: 390px;
+      margin-left: -3px;
     }
     img.desktop,
     img.tablet {
@@ -166,17 +161,6 @@
     align-items: center;
 
     .addres {
-      // width: 282px;
-      // margin-top: 200px;
-      // display: flex;
-      // flex-direction: column;
-      // gap: 50px;
-      // p {
-      //   a {
-      //     text-decoration: none;
-      //     color: inherit;
-      //   }
-      // }
       display: flex;
       flex-direction: column;
       margin-top: 73px;

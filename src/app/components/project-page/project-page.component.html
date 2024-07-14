@@ -12,7 +12,7 @@
                     <h2>{{ project.title }}</h2>
                     <p>{{ project.content | short}}</p>
                 </div>
-                <button [routerLink]="'/projects/'+project.id">Read more</button>
+                <button (click)="goToTheTop()" [routerLink]="'/projects/'+project.id">Read more</button>
             </li>
             }
         </ul>
