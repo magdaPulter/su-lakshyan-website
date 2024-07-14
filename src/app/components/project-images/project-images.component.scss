@@ -29,13 +29,15 @@
 }
 @media (max-width: 768px) {
   .images {
-    max-width: 390px;
+    width: 100%;
     img {
-      max-width: 340px;
-      height: 340px;
+      min-width: 300px;
+      max-width: 350px;
+      min-height: 300px;
+      max-height: 350px;
     }
     :nth-child(1) {
-      display: inline;
+      display: block;
     }
     :nth-child(2) {
       display: none;
