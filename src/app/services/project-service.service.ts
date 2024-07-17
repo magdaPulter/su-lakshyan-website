@@ -31,12 +31,6 @@ export class ProjectServiceService {
       },
       {
         date: '12.02.2024',
-        title: 'Handcrafting Traditional Dhaka Products',
-        content: '...',
-        id: '9',
-      },
-      {
-        date: '12.02.2024',
         title: 'Recycling Plastics and Production of Materials',
         content:
           'With this project, we aim to address plastic waste by converting it into valuable, usable materials. This initiative involves collecting plastic waste, processing it through recycling methods, and producing various products that can be reintroduced into the market. These can include items for everyday use, as well as those that fulfill decorative functions in homes or hotels. For example, flower pots, trays and others. The project combines environmental stewardship with innovative manufacturing techniques to create a sustainable cycle for plastic materials. The most important goals of the project are: Decrease the amount of plastic waste in landfills and the environment. Promote recycling by engaging the community in plastic recycling programs. Develop innovative products from recycled plastics to demonstrate the potential of recycled materials. Increase economic opportunities by creating jobs and enabling growth through the recycling and production process.',
