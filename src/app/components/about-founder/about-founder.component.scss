@@ -2,31 +2,38 @@
 
 .founder {
   height: 850px;
-  background-color: $green-secondary;
+  background-color: $green-primary;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .content {
     width: 887px;
-    height: 439px;
+    height: 585px;
     display: flex;
     justify-content: space-between;
 
     main {
       max-width: 400px;
-      color: $white;
+      color: $green-secondary;
 
       h1 {
         font-size: 48px;
         line-height: 70px;
-        // letter-spacing: -2px;
         margin-bottom: 35px;
       }
       p {
         font-size: 18px;
         line-height: 22px;
         padding: 5px;
+        margin-bottom: 25px;
+      }
+      .logo {
+        p {
+          font-size: 10px;
+          line-height: 36px;
+          padding: 0px;
+        }
       }
     }
     aside {
@@ -41,7 +48,7 @@
     height: 645px;
     .content {
       width: 800px;
-      height: 346px;
+      height: 478px;
       main {
         h1 {
           font-size: 40px;
@@ -51,6 +58,15 @@
           font-size: 16px;
           line-height: 19px;
           padding: 0px 20px 0px 0px;
+        }
+        .logo {
+          img {
+            width: 67px;
+            height: 56px;
+          }
+          p {
+            font-size: 8px;
+          }
         }
       }
       aside {
@@ -63,10 +79,13 @@
 }
 @media (max-width: 768px) {
   .founder {
+    align-items: start;
     background-color: $green-primary;
     min-width: 390px;
-    height: 936px;
+    height: 1075px;
+    padding: 98px;
     .content {
+      margin: -50px;
       width: 285px;
       height: 845px;
       flex-direction: column;
@@ -80,7 +99,6 @@
           line-height: 51px;
           width: 240px;
           margin: 50px 0px 35px 0px;
-          // padding-right: 20px;
         }
         p {
           font-size: 16px;
