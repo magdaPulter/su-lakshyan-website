@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
   .home-projects {
     background-color: $green-primary;
     height: 879px;
@@ -134,12 +134,12 @@
         height: 284px;
 
         img {
-          width: 317px;
-          height: 284px;
+          max-width: 317px;
+          max-height: 284px;
         }
         .text {
           height: 284px;
-          width: 567px;
+          max-width: 567px;
           background-color: $pink-primary;
           border-radius: 0px 0px 0px 200px;
           display: flex;
@@ -250,6 +250,23 @@
   }
 }
 
+@media (max-width: 884px) {
+  .home-projects {
+    .tablet-view {
+      .top {
+        .text {
+          width: 450px;
+          p {
+            margin: 44px 80px 50px 10px;
+          }
+        }
+      }
+
+      .bottom {
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .home-projects {
     background-color: $pink-dark;

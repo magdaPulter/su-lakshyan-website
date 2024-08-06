@@ -7,11 +7,10 @@
   display: flex;
   justify-content: space-between;
   main {
-    max-width: 651px;
+    max-width: 50%;
     color: $green-secondary;
     padding-left: 100px;
     margin-top: 99px;
-    // margin-top: 40px; //not fixed
     h1 {
       width: 508px;
       font-size: 75px;
@@ -32,6 +31,7 @@
 
   img.desctop {
     align-self: end;
+    width: 50%;
   }
   img.mobile,
   img.tablet {
@@ -44,9 +44,9 @@
     height: 768px;
     main {
       height: 575px;
-      padding-left: 0px;
+      width: 50%;
+      padding-left: 46px;
       margin-top: 132px;
-      margin-left: 46px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -81,6 +81,7 @@
     img.tablet {
       display: inline;
       align-self: end;
+      width: 50%;
     }
   }
 }
@@ -124,6 +125,8 @@
     }
     img.mobile {
       display: inline;
+      height: 436px;
+      width: 390px;
     }
   }
 }
