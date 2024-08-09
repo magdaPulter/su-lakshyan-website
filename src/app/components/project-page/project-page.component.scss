@@ -15,10 +15,12 @@
     margin-top: 95px;
 
     .projects-list {
+      background-color: aqua;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 40px;
+      width: 100%;
 
       li {
         width: 620px;
@@ -147,6 +149,7 @@
     }
     main {
       width: 100%;
+      
       .projects-list {
         justify-content: center;
         li {

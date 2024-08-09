@@ -98,6 +98,9 @@ nav {
     @media (max-width: 786px) {
       max-width: 100%;
     }
+    @media (max-width: 390px) {
+      width: 100vw;
+    }
   }
 
   nav.is-open {
@@ -119,6 +122,9 @@ nav {
       @media (max-width: 786px) {
         height: 416px;
       }
+    }
+    @media (max-width: 390px) {
+      width: 100vw;
     }
   }
 }
