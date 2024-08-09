@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: aquamarine;
   img {
     width: 400px;
     height: 400px;
@@ -13,7 +14,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1282px) {
   .images {
     width: 820px;
     margin-left: auto;
@@ -24,6 +25,16 @@
     }
     :nth-child(1) {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 826px) {
+  .images {
+    width: 750px;
+    img {
+      width: 350px;
+      height: 350px;
     }
   }
 }

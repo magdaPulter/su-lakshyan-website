@@ -14,7 +14,7 @@ export class AboutOrganisationGoalComponent {
     {
       title: 'Economic Empowerment',
       content:
-        '80% of program graduates secure sustainable employment or start their own businesses within one year',
+        '80% of program graduates secure sustainable employment or start their own businesses within one year.',
       id: '1',
     },
     {
@@ -26,13 +26,13 @@ export class AboutOrganisationGoalComponent {
     {
       title: 'Cultural Preservation',
       content:
-        'Sustain the production of Nepali Dhaka-related goods, with a 50% increase in market demand',
+        'Sustain the production of Nepali Dhaka-related goods, with a 50% increase in market demand.',
       id: '3',
     },
     {
       title: ' Digital Inclusion',
       content:
-        '90% of participants demonstrate improved proficiency in basic computer skills and English language',
+        '90% of participants demonstrate improved proficiency in basic computer skills and English language.',
       id: '4',
     },
     {
